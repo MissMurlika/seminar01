@@ -1,0 +1,15 @@
+// Задача 4: Напишите программу, 
+//которая принимает 
+//на вход три числа и выдаёт 
+//максимальное из этих чисел.
+
+Console.WriteLine("Доброго времяни суток!");
+
+
+ Console.WriteLine("Введите три числа через enter: ");
+ int firstNumber = int.Parse(Console.ReadLine());
+ int secondNumber =int.Parse(Console.ReadLine());
+ int thirdNumber = int.Parse(Console.ReadLine());
+ int max = firstNumber > secondNumber ? firstNumber:secondNumber;
+ max=max>thirdNumber ? max : thirdNumber;
+ Console.WriteLine($"Большее число:{max}");
